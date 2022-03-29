@@ -29,18 +29,18 @@
       <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" style="padding: 1em; margin: auto;">
         <h1>Wages Accounting for Inflation</h1>
         <p>
-          Inflation refers to the increase (or decrease) in the cost of goods over time. Inflation is not, by itself, a bad thing. But it is important to ensure that employees are having their wages adjusted - frequently - to account for this natural process.
-        </p>
-        <p>
-          In the United States of America, and probably other countries around the world, companies rarely follow inflation unless required to by law. This means that inflation could be e.g. 4% but a company might give out 2% pay raises, typically touted as "cost of living adjustments". But if the raise is not <i>at least</i> as much as the inflation rate, then employees are actually <i>losing</i> money.
+          Inflation refers to the increase (or decrease) in the cost of goods over time. It is important to ensure that employees are having their wages adjusted - frequently - to account for this natural change.
         </p>
 
         <h3>How it works</h3>
         <p>
-          Enter your wages (hourly, annual, whatever - anything works) and click "Calculate".
+          Enter your wages (hourly, annual, whatever - anything works<sup>1</sup>) and click "Calculate".
         </p>
         <p>
-          Your results will be presented as a table with each row representing a different month between now and up to 3 years ago. Each row tells you <b>the inflation rate of today when compared to the date stated in that row</b>. If a given row, e.g. Jan 20xx, shows an inflation rate of 5%, then the inflation rate <i>today</i> when compared to the cost of goods in Jan 20xx is 5%. That means that in order to break even on your spending power, you need to be making 5% more than you did in Jan 20xx. The table will also show you what that (adjusted) wage should be <i>at a minimum</i>.
+          The results table will display how much the relative inflation is between a particular period of time and right now, going back up to 3 years prior<sup>2</sup>. It will also display what your current wages <i>should be</i> today to account for inflation.
+        </p>
+        <p>
+           Example: If you enter <i>60000</i> for your wages (e.g. $60k/yr salary), and you started making that much in wages a year ago, then you would look in the results table for the month and year corresponding with a year ago. The inflation rate shown in that row is the relative inflation calculated using the cost of goods right now versus the cost of goods at that particular point in time. The adjusted wage displayed is how much money you <i>should be</i> making right now to offset the inflation experienced between then and now. If you make less than that adjusted wage, you are actually making less money than you did in the past due to an overall increase in cost of goods.
         </p>
 
         <form id="calculator" class="pure-form pure-form-stacked">
@@ -59,19 +59,35 @@
 
         <h3>Important!</h3>
         <p>
-          If you enter your current wages and scroll to the month and year you started earning that much (or to the last row in the results if you've gone that long without a pay increase), you should be making <i>at least</i> the amount specified in that row of the results.
+          If you enter your current wages and scroll to the month and year you started earning that much (or to the last row in the results if you've gone a long time without a pay increase), you should be making <i>at least</i> the amount specified in that row of the results.
         </p>
         <p>
-          If your current wages are <i>less</i> than the one specified in that row of the results, there is a good possibility that you are actually making less money now than you were when you started earning those wages. Inflation is calculated across all goods purchased, including items such as food and energy. So if, for example, you were making $20/hr a year ago, and inflation between then and now is 5%, then you must make <i>at least</i> $21/hr to maintain your previous lifestyle. If you make less than that, your costs have gone up more than your wages and you are suffering a net loss in terms of spending power.
+          If your current wages are <i>less</i> than the one specified in that row of the results, there is a good possibility that you are actually making less money now than you were when you started earning those wages. This is because inflation is calculated across all goods sold, including items such as food and energy. Anything you spend money on, the cost of it goes up with inflation, decreasing your spending power.
+        </p>
+        <p>
+          If, for example, you were making $20/hr a year ago, and inflation between then and now is 5%, then you must make <i>at least</i> $21/hr to maintain your previous lifestyle. If you make less than that, your costs have gone up more than your wages and you are suffering a net loss in terms of spending power.
         </p>
 
         <h3>Disclaimers</h3>
+        <ol>
+          <li>
+            This tool currently targets only USA wages. It uses Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS).
+          </li>
+          <li>
+            Due to how the BLS API works, this tool can only show data from the present year and the two previous calendar years. That means that e.g. you would only see data as far back as January 2020 for any date you run this tool in all of 2022. It uses calendar years and not a set number of months, so once a new year hits, the oldest year's worth of data is no longer retrievable by the API.
+          </li>
+        </ol>
+
+        <h3>Author's Note</h3>
         <p>
-          This tool currently targets only USA wages. It uses Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS).
+          I've never been a fan of companies trying to hide salaries and bonuses and raises between their employees. It is very much a predatory practice meant to ensure companies can retain talent without paying equally and sometimes without even paying market rate.
         </p>
         <p>
-          Due to how the BLS API works, this tool can only show data from the present year and the two previous calendar years. That means that e.g. you would only see data as far back as January 2020 for any date you run this tool in all of 2022. It uses calendar years and not a set number of months, so once a new year hits, the oldest year's worth of data is no longer retrievable by the API.
+          But with inflation being so high in recent years, I was especially appalled at companies not giving appropriate raises to their employees. Even a 6% raise right now (March 2022) would not cover for the base inflation between now and a year ago. This means that employees are objectively losing spending power, and at a time when many companies are posting record profits.
         </p>
+        <p>
+          It is my hope that this tool might help some people to argue for a more realistic pay raise so that they can ensure their employers is meeting the base inflation rate at a minimum.
+        </p>  
       </div>
     </div>
 
