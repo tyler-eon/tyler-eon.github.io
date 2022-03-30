@@ -87,7 +87,7 @@
         </p>
         <p>
           It is my hope that this tool might help some people to argue for a more realistic pay raise so that they can ensure their employers is meeting the base inflation rate at a minimum.
-        </p>  
+        </p>
       </div>
     </div>
 
@@ -135,6 +135,13 @@
 
         return false;
       }
+
+      function ignoreSubmit(event) {
+        event.preventDefault();
+      }
+
+      const form = document.getElementById("calculator");
+      form.addEventListener("submit", ignoreSubmit);
     </script>
   </body>
 </html>
